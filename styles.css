@@ -1,0 +1,344 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set body font and background */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #000000, #242f9b);
+  color: #000000;
+}
+
+/* Add spacing and center content in the header */
+header {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* Added to set text color to white */
+}
+
+/* Ensure each section occupies the entire screen */
+section {
+  margin: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Align heading to the left and content to the right */
+section h2 {
+  margin-left: 120px;
+  text-align: left;
+  margin-right: auto;
+  font-size: 60px;
+  color: #ffffff; /* Added to set text color to white */
+}
+
+section p,
+section ul {
+  margin: 0 5% 0 30%;
+  text-align: right;
+  white-space: normal; /* Changed from nowrap to normal */
+  overflow: hidden;
+  display: -webkit-box; /* Added vendor prefixes for better browser support */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Set the desired number of lines to display before ellipsis */
+  text-overflow: ellipsis;
+  color: #e3e3e3;
+  margin-bottom: 10px; /* Increased margin to create space after the content */
+}
+
+/* Style the section buttons */
+.section-button {
+  font-weight: bold;
+  display: inline-block; /* Changed from block to inline-block */
+  padding: 8px 16px;
+  background-color: #242f9b;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-left: 10px; /* Added margin to separate from the ellipsis */
+}
+
+.section-button:hover {
+  background: linear-gradient(to bottom right, #6b63ff, #a26dff);
+}
+
+/* Adjust spacing between sections */
+section + section {
+  margin-top: 20px;
+}
+
+/* Style the name in the header */
+#name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the address in the header */
+#address {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Style the contact information in the header */
+#contact {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Style the links in the header */
+#linkedin-link,
+#github-link,
+#tel,
+#mail {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#linkedin-link:hover,
+#github-link:hover,
+#tel:hover,
+#mail:hover {
+  color: #a26dff;
+}
+
+/* Add spacing to the main sections */
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* Added to set text color to white */
+}
+
+/* Style the section headings */
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the paragraphs in the sections */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e3e3e3;
+  margin-bottom: 10px;
+  margin-top: 10px; /* Added margin to push content down */
+}
+
+/* Style the strong elements in the sections */
+strong {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Style the unordered lists in the sections */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style the list items in the sections */
+li {
+  margin-bottom: 5px;
+}
+
+/* Style the duration and description paragraphs */
+.duration,
+.description {
+  color: #cccccc;
+}
+
+/* Style the education items */
+.education-item {
+  margin-bottom: 20px;
+}
+
+/* Style the module list */
+.module-list {
+  margin-top: 10px;
+}
+
+/* Style the work experience items */
+.work-experience-item {
+  margin-bottom: 20px;
+}
+
+/* Style the responsibility list */
+.responsibility-list {
+  margin-top: 10px;
+}
+
+/* Style the skills list */
+#skills-list {
+  margin-bottom: 10px;
+}
+
+/* Style the projects list */
+#projects-list {
+  margin-bottom: 10px;
+}
+
+/* Style the project item */
+.project {
+  margin-bottom: 20px;
+}
+
+/* Style the achievements list */
+#achievements-list {
+  margin-bottom: 10px;
+}
+
+/* Style the achievement sublist */
+.achievement-sublist {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/* Style the skills, activities, and interests list */
+#skills-interests-list {
+  margin-bottom: 10px;
+}
+
+/* Sidebar styles */
+#sidebar {
+  width: 200px;
+  background: linear-gradient(to bottom, #000000, #242f9b);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: -220px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  margin-bottom: 50px; /* Increase the margin to create more spacing */
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+/* Rectangular background for hovered item */
+#sidebar ul li:hover {
+  position: relative;
+}
+
+#sidebar ul li:hover::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(to bottom right, #6b63ff, #a26dff);
+  opacity: 0.9;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+/* Burger icon styles */
+#burger-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1;
+  display: block;
+}
+
+.burger-line {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+}
+
+#close-icon {
+  display: none;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  cursor: pointer;
+}
+
+.close-icon-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 2px;
+  background-color: #ffffff;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.close-icon-line:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-icon-line:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  #name {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: 10px; /* Added margin to push content down */
+  }
+
+  ul {
+    margin-left: 10px;
+  }
+
+  .module-list,
+  .responsibility-list,
+  .achievement-sublist {
+    margin-left: 0;
+  }
+}
