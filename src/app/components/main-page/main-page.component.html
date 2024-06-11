@@ -1,0 +1,122 @@
+<header>
+    <div class="header">
+        <div class="telephone">
+            <div class="button">
+                <div routerLink="/createProfile">Details</div>
+                <fa-icon 
+                (click)="toggleMenu()" 
+                [icon]="faEllipsisH"
+                 ></fa-icon>
+
+                <div class="options" [class.show]="menuVisible">
+                    <div *ngFor="let peps of people"
+                    (click)="choosePortfolio(peps)">
+                        {{peps.firstName}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</header>
+
+<div class="body">
+
+    <div>
+        <img 
+        src="360_F_193562494_uZu3hswS738ZiuypuRl2oID4gM7mmAHX.jpg" 
+        alt="Person"
+        width=500
+        height=500
+        >
+    </div>
+
+    <h1 class="greeting">
+        Hey There,
+        <br> 
+        I'm ROY BRIGHT ASIKU
+    </h1>
+
+    <div class="about-me">
+        A passionate computer science student looking 
+        forward to an exciting placement year. 
+        I have a strong academic background in computer science and possess
+        a deep understanding of programming languages such as Java, Python, 
+        C# and JavaScript. Experienced in problem-solving and communication skills through
+        various part-time roles, including technical support and business development.
+    </div>
+
+    <div class="section">
+        <div class="section-heading">
+            <h2> 
+                WORK EXPERIENCE
+            </h2>
+        </div>
+        <div class="section-content">
+            <div 
+            *ngFor="let content of cards" 
+            class="company">
+            <a [href]="content.website" target="_blank">
+                <img 
+                src="{{content.image}}"
+                alt="{{content.title}}"
+                width=300
+                height=300>
+
+                <h4>
+                    {{content.title}}
+                </h4>
+                <div>
+                    {{content.description}}
+                </div>
+
+            </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">
+            <h2> Education</h2>
+        </div>
+
+        <div class="section-content">
+
+            <div class="school" *ngFor="let education of schools">
+                <h4>
+                    {{education.school}}
+                </h4>
+                <div class="certifiction">
+                    {{education.certification}}
+                </div>
+                <div class="grades" *ngFor="let pass of education.grades">
+                    <li>{{pass}}</li>
+                </div>
+
+                <div class="overall-grade" [class.show]="education.overallGrade">
+                    Overall grade: {{education.overallGrade}}
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-heading">
+                <h2>Tech Stack</h2>
+            </div>
+
+            <div class="section-content">
+                <div class="techStak" *ngFor="let tech of techStack">
+                    <h4>{{tech.title}}</h4>
+                    <div *ngFor="let part of tech.stack">
+                        <li>{{part}}</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h4>Contact Me</h4>
+    </div>
+</div>
